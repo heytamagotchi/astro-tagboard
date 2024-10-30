@@ -8,5 +8,14 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParens": "always",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  "overrides": [
+    {
+      "files": "*.astro",
+      "options": {
+        "parser": "astro"
+      }
+    }
+  ]
 }

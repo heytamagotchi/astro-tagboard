@@ -1,19 +1,24 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
-import zb1Image from "../assets/zb1-good-so-bad-promo.jpeg";
+import Layout from "../layouts/Layout.astro"
+import { Image } from "astro:assets"
+import zb1Image from "../assets/zb1-good-so-bad-promo.jpeg"
 ---
 
 <Layout title="ZB1 Archive">
   <section class="text-center">
     <h1>Welcome to 0base1!</h1>
     <figure class="mx-auto w-[600px] overflow-hidden rounded-lg text-center">
-      <Image src={zb1Image}
-             alt="Zerobaseone wearing outfit inspired by outer space with a satelite and planets on the back" />
+      <Image
+        src={zb1Image}
+        alt="Zerobaseone wearing outfit inspired by outer space with a satelite and planets on the back"
+      />
     </figure>
     <div>
       <p>This is an <em>unofficial</em> attempt to archive all media that is ZB1-related.</p>
-      <p>I am not affiliated with any of the following companies, agencies, entities related to ZB1: &copy;CJ ENM, MNET&trade; safdsfsdafsdaf</p>
+      <p>
+        I am not affiliated with any of the following companies, agencies, entities related to ZB1: &copy;CJ ENM,
+        MNET&trade; safdsfsdafsdaf
+      </p>
     </div>
   </section>
 </Layout>
