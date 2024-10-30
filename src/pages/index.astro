@@ -1,21 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import zb1Image from "../assets/zb1-good-so-bad-promo.jpeg";
 ---
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-4" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="text-lg mb-10" />
-    <p class="mb-8">
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Read the Docs</a>
-    </p>
+<Layout title="ZB1 Archive">
+  <section class="text-center">
+    <h1>Welcome to 0base1!</h1>
+    <figure class="mx-auto w-[600px] overflow-hidden rounded-lg text-center">
+      <Image src={zb1Image}
+             alt="Zerobaseone wearing outfit inspired by outer space with a satelite and planets on the back" />
+    </figure>
+    <div>
+      <p>This is an <em>unofficial</em> attempt to archive all media that is ZB1-related.</p>
+      <p>I am not affiliated with any of the following companies, agencies, entities related to ZB1: &copy;CJ ENM, MNET&trade; safdsfsdafsdaf</p>
+    </div>
+  </section>
 </Layout>
