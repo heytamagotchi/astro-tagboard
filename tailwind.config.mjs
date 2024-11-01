@@ -24,16 +24,46 @@ export default {
   daisyui: {
     themes: [
       {
-        lofi: {
-          ...require("daisyui/src/theming/themes")["lofi"],
-          primary: "#F67280",
-          "primary-content": "#1f1f1f",
-          secondary: "#C06C84",
-          info: "#F67280",
-          "info-content": "#1f1f1f"
-        }
-      }
-    ]
+        'zbtheme': {
+          'primary' : '#0c0898',
+          'primary-focus' : '#130cd4',
+          'primary-content' : '#FDFEFF',
+
+          'secondary' : '#e01066',
+          'secondary-focus' : '#fb4b95',
+          'secondary-content' : '#FDFEFF',
+
+          'accent' : '#62f9ed',
+          'accent-focus' : '#94fff6',
+          'accent-content' : '#212121',
+
+          'neutral' : '#3b424e',
+          'neutral-focus' : '#2a2e37',
+          'neutral-content' : '#ffffff',
+
+          'base-100' : '#ffffff',
+          'base-200' : '#f9fafb',
+          'base-300' : '#ced3d9',
+          'base-content' : '#1e2734',
+
+          'info' : '#1c92f2',
+          'success' : '#009440',
+          'warning' : '#ffa742',
+          'error' : '#e60000',
+
+          '--rounded-box': '1rem',          
+          '--rounded-btn': '2rem',        
+          '--rounded-badge': '1.9rem',      
+
+          '--animation-btn': '.25s',       
+          '--animation-input': '.2s',       
+
+          '--btn-text-case': 'uppercase',   
+          '--navbar-padding': '.5rem',      
+          '--border-btn': '1px',            
+        },
+      },
+    ],
   },
   plugins: [require("daisyui")]
 };
