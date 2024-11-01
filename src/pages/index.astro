@@ -4,21 +4,40 @@ import { Image } from "astro:assets"
 import zb1Image from "../assets/zb1-good-so-bad-promo.jpeg"
 ---
 
-<Layout title="ZB1 Archive">
+<Layout
+  title="ZB1 Archive"
+  description="Explore Zerobaseone's media archive! Find TikTok, YouTube videos, variety shows, Weverse Lives & performances with smart search & sort feature for zeroses!"
+>
   <section class="text-center">
-    <h1>Welcome to 0base1!</h1>
-    <figure class="mx-auto w-[600px] overflow-hidden rounded-lg text-center">
+    <h1>ZB1 Unofficial Archive</h1>
+    <figure
+      class="mx-auto my-7 max-w-[364px] overflow-hidden rounded-lg sm:w-[500px] sm:max-w-none"
+    >
+      <!-- FIXME: make images responsive -->
       <Image
         src={zb1Image}
         alt="Zerobaseone wearing outfit inspired by outer space with a satelite and planets on the back"
+        width={364}
+        height={260}
       />
     </figure>
     <div>
-      <p>This is an <em>unofficial</em> attempt to archive all media that is ZB1-related.</p>
       <p>
+        This is an <em>unofficial</em> attempt to archive all media that is ZB1-related.
+      </p>
+      <div class="mb-3"></div>
+      <p>
+        If you believe our tag board has incorrect information or is missing important media, please
+        <a
+          href="mailto:heytamagotchi@gmail.com?subject=ZB1%20Unofficial%20Archive%20Concern%20%5B0base1%5D"
+          >send us an email</a
+        >.
+      </p>
+      <!-- <p>
         I am not affiliated with any of the following companies, agencies, entities related to ZB1: &copy;CJ ENM,
         MNET&trade; safdsfsdafsdaf
-      </p>
+      </p> -->
+      <a href="/archive" class="btn btn-secondary my-5 h-14 px-9 text-lg">Enter Archive</a>
     </div>
   </section>
 </Layout>
