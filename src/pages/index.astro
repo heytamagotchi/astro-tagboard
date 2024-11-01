@@ -13,12 +13,11 @@ import zb1Image from "../assets/zb1-good-so-bad-promo.jpeg"
     <figure
       class="mx-auto my-7 max-w-[364px] overflow-hidden rounded-lg sm:w-[500px] sm:max-w-none"
     >
-      <!-- FIXME: make images responsive -->
       <Image
         src={zb1Image}
         alt="Zerobaseone wearing outfit inspired by outer space with a satelite and planets on the back"
-        width={364}
-        height={260}
+        widths={[364, 500]}
+        sizes={`(max-width: 640px) 364px, 500px`}
       />
     </figure>
     <div>
